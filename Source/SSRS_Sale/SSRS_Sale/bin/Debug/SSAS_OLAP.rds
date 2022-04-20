@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SSAS_OLAP">
+  <ConnectionProperties>
+    <Extension>OLEDB-MD</Extension>
+    <ConnectString>Data Source=DESKTOP-2C1S29E;Initial Catalog=SSAS_OLAP</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>45ffa10b-7633-4131-ab2a-79a7e35ec41e</DataSourceID>
+</RptDataSource>

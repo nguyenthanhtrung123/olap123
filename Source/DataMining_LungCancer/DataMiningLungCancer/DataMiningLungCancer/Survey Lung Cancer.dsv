@@ -1,0 +1,93 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d2f8897c-8a50-42b7-abc4-19c293f945ec" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Survey Lung Cancer</ID>
+  <Name>Survey Lung Cancer</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Survey Lung Cancer</DataSourceID>
+  <Schema>
+    <xs:schema id="Survey_x0020_Lung_x0020_Cancer" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Survey_x0020_Lung_x0020_Cancer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="5c7a654d-3527-44fe-93a5-3dc04970ce10">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_survey_lung_cancer" msprop:design-time-name="4c5d173f-5b56-40e0-800d-7ba5022bd0fd" msprop:DbTableName="survey_lung_cancer" msprop:FriendlyName="survey_lung_cancer" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="GENDER" msprop:design-time-name="5ca07903-e868-4a3e-aa1c-c793c8e68e1d" msprop:DbColumnName="GENDER" msprop:FriendlyName="GENDER">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="AGE" msprop:design-time-name="6fd77a8c-998d-437f-af8c-1bd353cde91b" msprop:DbColumnName="AGE" msprop:FriendlyName="AGE" type="xs:int" />
+                  <xs:element name="SMOKING" msprop:design-time-name="c693ea2d-2c84-4b15-8860-503694eb89fe" msprop:DbColumnName="SMOKING" msprop:FriendlyName="SMOKING" type="xs:int" />
+                  <xs:element name="YELLOW_FINGERS" msprop:design-time-name="2632bb89-b82b-42d5-afb2-d4f2b96b84a4" msprop:DbColumnName="YELLOW_FINGERS" msprop:FriendlyName="YELLOW_FINGERS" type="xs:int" />
+                  <xs:element name="ANXIETY" msprop:design-time-name="8fa793d1-abf6-4ef5-b087-1858a9d014e0" msprop:DbColumnName="ANXIETY" msprop:FriendlyName="ANXIETY" type="xs:int" />
+                  <xs:element name="PEER_PRESSURE" msprop:design-time-name="3aa1cbd9-6729-45dd-803d-3db1f13ff4bc" msprop:DbColumnName="PEER_PRESSURE" msprop:FriendlyName="PEER_PRESSURE" type="xs:int" />
+                  <xs:element name="CHRONIC_DISEASE" msprop:design-time-name="99b7b9a5-68ef-4e89-8d92-a66ecc05dcc8" msprop:DbColumnName="CHRONIC_DISEASE" msprop:FriendlyName="CHRONIC_DISEASE" type="xs:int" />
+                  <xs:element name="FATIGUE" msprop:design-time-name="b4ef40eb-7dda-4231-862a-d147355c07ec" msprop:DbColumnName="FATIGUE" msprop:FriendlyName="FATIGUE" type="xs:int" />
+                  <xs:element name="ALLERGY" msprop:design-time-name="57f24ab9-5e83-457f-b099-55cab76230b8" msprop:DbColumnName="ALLERGY" msprop:FriendlyName="ALLERGY" type="xs:int" />
+                  <xs:element name="WHEEZING" msprop:design-time-name="7c1dcbfe-99d3-42bf-8de8-dff0a9466323" msprop:DbColumnName="WHEEZING" msprop:FriendlyName="WHEEZING" type="xs:int" />
+                  <xs:element name="ALCOHOL_CONSUMING" msprop:design-time-name="fd269393-a7df-45d0-9cee-854505051211" msprop:DbColumnName="ALCOHOL_CONSUMING" msprop:FriendlyName="ALCOHOL_CONSUMING" type="xs:int" />
+                  <xs:element name="COUGHING" msprop:design-time-name="389cf2da-7189-4c81-8a52-4b114a418227" msprop:DbColumnName="COUGHING" msprop:FriendlyName="COUGHING" type="xs:int" />
+                  <xs:element name="SHORTNESS_OF_BREATH" msprop:design-time-name="22a4a952-627c-4704-86eb-40d0fa80b5e4" msprop:DbColumnName="SHORTNESS_OF_BREATH" msprop:FriendlyName="SHORTNESS_OF_BREATH" type="xs:int" />
+                  <xs:element name="SWALLOWING_DIFFICULTY" msprop:design-time-name="6ff6b691-8659-47fb-b306-cc4b4f6cd670" msprop:DbColumnName="SWALLOWING_DIFFICULTY" msprop:FriendlyName="SWALLOWING_DIFFICULTY" type="xs:int" />
+                  <xs:element name="CHEST_PAIN" msprop:design-time-name="fa691ff6-b70a-46c5-bc87-4c5b14abf0c4" msprop:DbColumnName="CHEST_PAIN" msprop:FriendlyName="CHEST_PAIN" type="xs:int" />
+                  <xs:element name="LUNG_CANCER" msprop:design-time-name="81be44bb-af9e-4d0d-9e7e-2d39debad054" msprop:DbColumnName="LUNG_CANCER" msprop:FriendlyName="LUNG_CANCER">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8c45b2a7-e008-49b9-a1f1-54e32e815256" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_survey_lung_cancer" />
+          <xs:field xpath="id" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <Survey_x0020_Lung_x0020_Cancer xmlns="" />
+  </Schema>
+</DataSourceView>

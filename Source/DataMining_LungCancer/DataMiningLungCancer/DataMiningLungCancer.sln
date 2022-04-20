@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "DataMiningLungCancer", "DataMiningLungCancer\DataMiningLungCancer.dwproj", "{98C660A9-9AB7-4CEB-81AF-99E786007D72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98C660A9-9AB7-4CEB-81AF-99E786007D72}.Development|Default.ActiveCfg = Development
+		{98C660A9-9AB7-4CEB-81AF-99E786007D72}.Development|Default.Build.0 = Development
+		{98C660A9-9AB7-4CEB-81AF-99E786007D72}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {781DFDCB-6867-4335-93A2-C47ECC97126E}
+	EndGlobalSection
+EndGlobal

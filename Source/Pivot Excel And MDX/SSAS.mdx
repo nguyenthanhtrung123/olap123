@@ -1,0 +1,131 @@
+﻿//1 thống kê số hóa đơn ở các khu vực
+select [Measures].[Fact Count]  on columns ,
+non empty {[Dim Location].[Region].members } on rows
+from [OLAP Sale]
+
+//2 đơn  giá lớn nhất, nhỏ nhất châu á
+select ({[Measures].[Maximum Total Revenue],[Measures].[Minimum Total Revenue]}) on columns,
+non empty[Dim Day].[Yearg] on rows
+from [OLAP Sale]
+where [Dim Location].[Region].&[Asia]
+
+//3 lợi nhuận lớn nhất,nhỏ nhất
+select ({[Measures].[Maximum Total Profit] , [Measures].[Minimum Total Profit]}) on columns,
+non empty [Dim Day].[Yearg] on rows
+from [OLAP Sale]
+
+
+//4 sắp xếp lợi nhuận tăng dần theo các năm .
+ SELECT  { [Measures].[Total Profit] } ON COLUMNS,
+ NON EMPTY order(
+ { [Dim Day].[Yearg].children  }
+ ,[Measures].[Total Profit]
+ , ASC) on rows
+from [OLAP Sale]
+
+
+//5 top 3 năm có số lượng hàng nhiều nhất .
+select {[Measures].[Item Type Count]} on columns,
+		head (
+			order ([Dim Day].[Yearg].children ,
+			[Measures].[Item Type Count], DESC)
+								,3) on rows
+from [OLAP Sale]
+
+//6 top 3 năm có đơn giá thấp nhất .
+select {[Measures].[Unit Price]} on columns,
+		non empty tail (
+			order ([Dim Day].[Yearg].children ,
+			[Measures].[Unit Price], DESC)
+								,3) on rows
+from [OLAP Sale]
+
+//7 thống kê số lượng sảm phẩm từ năm 2010 đến 2017 trừ 2014 được sắp xếp theo chiều giảm dần theo số lượng sản phẩm,của khu vực Australia and Oceania (roll up)
+
+select [Measures].[Item Type Count] on 0,
+	non empty order ({[Dim Day].[Yearg].members }-
+	{[Dim Day].[Yearg].&[2014]},
+	[Measures].[Item Type Count],DESC) on 1
+	from [OLAP Sale]
+	where ([Dim Location].[Region].&[Australia and Oceania])
+
+		//8 tổng thu nhập lớn nhất và nhỏ nhất trên các khu vực trừ châu á năm 2016 .
+	
+	SELECT   
+   ({[Measures].[Maximum Total Revenue],[Measures].[Minimum Total Revenue]}) ON COLUMNS,  
+   Except  
+      ([Dim Location].[Region].Members,  
+         {[Dim Location].[Region].&[Asia]}
+     ) ON ROWS  
+FROM   [OLAP Sale]
+WHERE  [Dim Day].[Yearg].&[2016]
+
+//9 liệt kê 4 khu vực có số lượng sản phẩm hơn 8000 từ 2010 đến 2017 (drill down) .
+select {[Measures].[Item Type Count]} on 0,
+topcount(
+		Filter([Dim Location].[Region].children,[Measures].[Item Type Count]> 8000),
+		4) on 1
+		from [OLAP Sale]
+		where {[Dim Day].[Yearg].&[2010]:[Dim Day].[Yearg].&[2017]}
+
+//10 thống kê số đơn hàng theo từng tháng của năm 2016
+select [Measures].[Fact Count] on 0,
+[Dim Day].[Monthg].children on 1
+from [OLAP Sale]
+where [Dim Day].[Yearg].&[2016]
+
+//11 sắp xếp các đơn hàng theo theo khu vực có chữ cái đầu là "A" có số đơn hàng thấp dần qua các năm .
+select [Measures].[Fact Count] on 0,
+order (
+generate ([Dim Day].[Yearg].children,
+filter([Dim Location].[Region].children,
+left([Dim Location].[Region].CurrentMember.Name,1)="A")*[Dim Day].[Yearg].CurrentMember*[Dim Day].[Monthg].children)
+,[Measures].[Fact Count],DESC) on 1
+from [OLAP Sale]
+
+//12 truy vấn 5 năm, có đơn giá được sắp xếp giảm dần, lấy bắt đầu từ vị trí tứ 2 . 
+select {[Measures].[Unit Price]} on 0,
+generate ([Dim Location].[Region].children,
+subset([Dim Location].[Region].CurrentMember*
+order([Dim Day].[Yearg].children,[Measures].[Unit Price],DESC),2,5)) on 1
+from [OLAP Sale]
+
+//13 Thống kê theo năm, 4 quốc gia có tổng chi phí lớn nhất từ các khu vực ngoài trừ khu vực North America.
+
+
+select {[Measures].[Total Cost]} on 0,
+CrossJoin ([Dim Day].[Yearg].children,
+Except  
+      ([Dim Location].[Region].Members,  
+         {[Dim Location].[Region].&[North America]}  
+     ),
+TopCount([Dim Location].[Country].children,4,[Measures].[Total Cost])) on 1
+from [OLAP Sale]
+
+//14 thống kê các tháng ở khu vực châu á có số lượng sản phẩm hơn 180 giảm dần
+
+select {[Measures].[Item Type Count]} on 0,
+generate (
+[Dim Day].[Yearg].children,
+filter ([Dim Day].[Yearg].CurrentMember*
+order([Dim Day].[Monthg].children,[Measures].[Item Type Count],ASC),[Measures].[Item Type Count]>180)
+) on 1
+from [OLAP Sale]
+where [Dim Location].[Region].&[Asia]
+
+//15 top 10 quốc gia có số hóa đơn từ 100>200 ,ứng với tổng doanh thu lớn hơn hoặc bằng 5000000 .
+
+
+select {[Measures].[Fact Count],[Measures].[Units Sold],[Measures].[Total Profit],[Measures].[Maximum Total Revenue]} on 0,
+topcount(
+filter (
+{intersect (
+{generate ([Dim Day].[Yearg].children,
+filter([Dim Day].[Yearg].CurrentMember*[Dim Day].[Monthg].children*[Dim Location].[Country].children,
+[Measures].[Measures].[Item Type Count]>100))},
+{generate ([Dim Day].[Yearg].children,
+filter([Dim Day].[Yearg].CurrentMember*[Dim Day].[Monthg].children*[Dim Location].[Country].children,
+[Measures].[Measures].[Item Type Count]<200))})},
+[Measures].[Total Revenue] >=5000000),10) on 1
+from [OLAP Sale]
+

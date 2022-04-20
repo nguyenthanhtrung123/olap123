@@ -1,0 +1,127 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d398449c-716a-41c7-9264-1a6eb4ccaa24" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OLAP Sale</ID>
+  <Name>OLAP Sale</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>OLAP Sale</DataSourceID>
+  <Schema>
+    <xs:schema id="OLAP_x0020_Sale" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OLAP_x0020_Sale" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="5ee80584-3388-49e9-b072-e47e9ae6a72a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Fact" msprop:design-time-name="83c7aa29-9dc1-4e88-a947-ea1993da7fc5" msprop:DbTableName="Fact" msprop:FriendlyName="Fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Item_Type" msprop:design-time-name="f465a602-f468-44dc-b023-af14fc9d1975" msprop:DbColumnName="Item_Type" msprop:FriendlyName="Item_Type" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Order_Date" msprop:design-time-name="dc7d2ede-8842-4955-8262-ec3e8741060e" msprop:DbColumnName="Order_Date" msprop:FriendlyName="Order_Date" type="xs:dateTime" />
+                  <xs:element name="Order_ID" msprop:design-time-name="f3c3d549-9a8f-4003-93fd-8e8b846af642" msprop:DbColumnName="Order_ID" msprop:FriendlyName="Order_ID" type="xs:int" />
+                  <xs:element name="Units_Sold" msprop:design-time-name="eeb11e44-fae8-40c8-8fed-91b0a4dc49b6" msprop:DbColumnName="Units_Sold" msprop:FriendlyName="Units_Sold" type="xs:int" minOccurs="0" />
+                  <xs:element name="Unit_Price" msprop:design-time-name="f2e38226-6473-4e93-abc6-1ec21df909cf" msprop:DbColumnName="Unit_Price" msprop:FriendlyName="Unit_Price" type="xs:double" minOccurs="0" />
+                  <xs:element name="Unit_Cost" msprop:design-time-name="39064b92-a89a-43e8-9738-afa422b0ace7" msprop:DbColumnName="Unit_Cost" msprop:FriendlyName="Unit_Cost" type="xs:double" minOccurs="0" />
+                  <xs:element name="Total_Revenue" msprop:design-time-name="1deae8f9-3fee-4e21-92f4-d673a4b8135d" msprop:DbColumnName="Total_Revenue" msprop:FriendlyName="Total_Revenue" type="xs:double" minOccurs="0" />
+                  <xs:element name="Total_Cost" msprop:design-time-name="4c9ad942-8a34-4642-8113-4318af963119" msprop:DbColumnName="Total_Cost" msprop:FriendlyName="Total_Cost" type="xs:double" minOccurs="0" />
+                  <xs:element name="Total_Profit" msprop:design-time-name="4a43b1c6-4980-4bab-8f98-fbff4a3d3628" msprop:DbColumnName="Total_Profit" msprop:FriendlyName="Total_Profit" type="xs:double" minOccurs="0" />
+                  <xs:element name="Location_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="b562ef07-f099-4c21-ac2c-aeeec256ed34" msprop:DbColumnName="Location_ID" msprop:FriendlyName="Location_ID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_day" msprop:design-time-name="744af9fa-c636-4079-933a-3509bca9ad26" msprop:DbTableName="Dim_day" msprop:FriendlyName="Dim_day" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Order_Date" msprop:design-time-name="6d842f7e-83c4-448b-bc90-9981bcd19447" msprop:DbColumnName="Order_Date" msprop:FriendlyName="Order_Date" type="xs:dateTime" />
+                  <xs:element name="monthg" msprop:design-time-name="b06f3e08-501c-440d-984c-e0007b22ddfd" msprop:DbColumnName="monthg" msprop:FriendlyName="monthg" type="xs:int" minOccurs="0" />
+                  <xs:element name="quarterg" msprop:design-time-name="eb9a9191-1eb3-4f52-97d2-ed8e352d23ef" msprop:DbColumnName="quarterg" msprop:FriendlyName="quarterg" type="xs:int" minOccurs="0" />
+                  <xs:element name="yearg" msprop:design-time-name="5675da35-0173-44f6-bf00-3077889474c6" msprop:DbColumnName="yearg" msprop:FriendlyName="yearg" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_location" msprop:design-time-name="bf272955-9f61-4688-8dc1-4b66e94b163d" msprop:DbTableName="Dim_location" msprop:FriendlyName="Dim_location" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Region" msprop:design-time-name="355d1380-d833-42e8-b7d8-ee558793e8e2" msprop:DbColumnName="Region" msprop:FriendlyName="Region" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Country" msprop:design-time-name="9e3f8fda-cfca-419c-9353-6341e116c8ef" msprop:DbColumnName="Country" msprop:FriendlyName="Country" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Location_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1aae354a-005d-411b-a439-75ca39626efd" msprop:DbColumnName="Location_ID" msprop:FriendlyName="Location_ID" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Order_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_day_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_day" />
+          <xs:field xpath="Order_Date" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_location_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_location" />
+          <xs:field xpath="Location_ID" />
+        </xs:unique>
+        <xs:keyref name="FK_Fact_Dim_day" refer="dbo_Dim_day_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Order_Date" />
+        </xs:keyref>
+        <xs:keyref name="FK_Fact_Dim_location" refer="dbo_Dim_location_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="Location_ID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OLAP_x0020_Sale xmlns="" />
+  </Schema>
+</DataSourceView>

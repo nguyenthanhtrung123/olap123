@@ -1,0 +1,775 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DataMiningLungCancer</ID>
+  <Name>DataMiningLungCancer</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <MiningStructures>
+    <MiningStructure>
+      <ID>Survey Lung Cancer_TreeDecisions</ID>
+      <Name>Survey Lung Cancer_TreeDecisions</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+          <Value>dbo_survey_lung_cancer</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-10722" scrolltop="-3497" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="26370" y="11994" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="survey_lung_cancer" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4886" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00001613000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_survey_lung_cancer" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-10722</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-3497</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Survey Lung Cancer</DataSourceViewID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>AGE</ID>
+          <Name>AGE</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>AGE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>ALCOHOL CONSUMING</ID>
+          <Name>ALCOHOL CONSUMING</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>ALCOHOL_CONSUMING</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>ALLERGY</ID>
+          <Name>ALLERGY</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>ALLERGY</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>ANXIETY</ID>
+          <Name>ANXIETY</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>ANXIETY</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>CHEST PAIN</ID>
+          <Name>CHEST PAIN</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>CHEST_PAIN</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>CHRONIC DISEASE</ID>
+          <Name>CHRONIC DISEASE</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>CHRONIC_DISEASE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>COUGHING</ID>
+          <Name>COUGHING</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>COUGHING</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>FATIGUE</ID>
+          <Name>FATIGUE</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>FATIGUE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>GENDER</ID>
+          <Name>GENDER</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>GENDER</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>Id</ID>
+          <Name>Id</Name>
+          <IsKey>true</IsKey>
+          <Type>Long</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>id</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>LUNG CANCER</ID>
+          <Name>LUNG CANCER</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>LUNG_CANCER</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>PEER PRESSURE</ID>
+          <Name>PEER PRESSURE</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>PEER_PRESSURE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>SHORTNESS OF BREATH</ID>
+          <Name>SHORTNESS OF BREATH</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>SHORTNESS_OF_BREATH</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>SMOKING</ID>
+          <Name>SMOKING</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>SMOKING</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>SWALLOWING DIFFICULTY</ID>
+          <Name>SWALLOWING DIFFICULTY</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>SWALLOWING_DIFFICULTY</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>WHEEZING</ID>
+          <Name>WHEEZING</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>WHEEZING</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>YELLOW FINGERS</ID>
+          <Name>YELLOW FINGERS</Name>
+          <Type>Long</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_survey_lung_cancer</TableID>
+                <ColumnID>YELLOW_FINGERS</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>Survey Lung Cancer</ID>
+          <Name>Survey Lung Cancer</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Decision_Trees</Algorithm>
+          <Columns>
+            <Column>
+              <ID>AGE</ID>
+              <Name>AGE</Name>
+              <SourceColumnID>AGE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ALCOHOL CONSUMING</ID>
+              <Name>ALCOHOL CONSUMING</Name>
+              <SourceColumnID>ALCOHOL CONSUMING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ALLERGY</ID>
+              <Name>ALLERGY</Name>
+              <SourceColumnID>ALLERGY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ANXIETY</ID>
+              <Name>ANXIETY</Name>
+              <SourceColumnID>ANXIETY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CHEST PAIN</ID>
+              <Name>CHEST PAIN</Name>
+              <SourceColumnID>CHEST PAIN</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CHRONIC DISEASE</ID>
+              <Name>CHRONIC DISEASE</Name>
+              <SourceColumnID>CHRONIC DISEASE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>COUGHING</ID>
+              <Name>COUGHING</Name>
+              <SourceColumnID>COUGHING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>FATIGUE</ID>
+              <Name>FATIGUE</Name>
+              <SourceColumnID>FATIGUE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>GENDER</ID>
+              <Name>GENDER</Name>
+              <SourceColumnID>GENDER</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Id</ID>
+              <Name>Id</Name>
+              <SourceColumnID>Id</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>LUNG CANCER</ID>
+              <Name>LUNG CANCER</Name>
+              <SourceColumnID>LUNG CANCER</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>PEER PRESSURE</ID>
+              <Name>PEER PRESSURE</Name>
+              <SourceColumnID>PEER PRESSURE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SHORTNESS OF BREATH</ID>
+              <Name>SHORTNESS OF BREATH</Name>
+              <SourceColumnID>SHORTNESS OF BREATH</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SMOKING</ID>
+              <Name>SMOKING</Name>
+              <SourceColumnID>SMOKING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SWALLOWING DIFFICULTY</ID>
+              <Name>SWALLOWING DIFFICULTY</Name>
+              <SourceColumnID>SWALLOWING DIFFICULTY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>WHEEZING</ID>
+              <Name>WHEEZING</Name>
+              <SourceColumnID>WHEEZING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>YELLOW FINGERS</ID>
+              <Name>YELLOW FINGERS</Name>
+              <SourceColumnID>YELLOW FINGERS</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+        <MiningModel>
+          <ID>Clustering</ID>
+          <Name>Clustering</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Clustering</Algorithm>
+          <Columns>
+            <Column>
+              <ID>AGE</ID>
+              <Name>AGE</Name>
+              <SourceColumnID>AGE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ALCOHOL CONSUMING</ID>
+              <Name>ALCOHOL CONSUMING</Name>
+              <SourceColumnID>ALCOHOL CONSUMING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ALLERGY</ID>
+              <Name>ALLERGY</Name>
+              <SourceColumnID>ALLERGY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ANXIETY</ID>
+              <Name>ANXIETY</Name>
+              <SourceColumnID>ANXIETY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CHEST PAIN</ID>
+              <Name>CHEST PAIN</Name>
+              <SourceColumnID>CHEST PAIN</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CHRONIC DISEASE</ID>
+              <Name>CHRONIC DISEASE</Name>
+              <SourceColumnID>CHRONIC DISEASE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>COUGHING</ID>
+              <Name>COUGHING</Name>
+              <SourceColumnID>COUGHING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>FATIGUE</ID>
+              <Name>FATIGUE</Name>
+              <SourceColumnID>FATIGUE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>GENDER</ID>
+              <Name>GENDER</Name>
+              <SourceColumnID>GENDER</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Id</ID>
+              <Name>Id</Name>
+              <SourceColumnID>Id</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>LUNG CANCER</ID>
+              <Name>LUNG CANCER</Name>
+              <SourceColumnID>LUNG CANCER</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>PEER PRESSURE</ID>
+              <Name>PEER PRESSURE</Name>
+              <SourceColumnID>PEER PRESSURE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SHORTNESS OF BREATH</ID>
+              <Name>SHORTNESS OF BREATH</Name>
+              <SourceColumnID>SHORTNESS OF BREATH</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SMOKING</ID>
+              <Name>SMOKING</Name>
+              <SourceColumnID>SMOKING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SWALLOWING DIFFICULTY</ID>
+              <Name>SWALLOWING DIFFICULTY</Name>
+              <SourceColumnID>SWALLOWING DIFFICULTY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>WHEEZING</ID>
+              <Name>WHEEZING</Name>
+              <SourceColumnID>WHEEZING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>YELLOW FINGERS</ID>
+              <Name>YELLOW FINGERS</Name>
+              <SourceColumnID>YELLOW FINGERS</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+        <MiningModel>
+          <ID>Naive Bayes</ID>
+          <Name>Naive Bayes</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+          <Columns>
+            <Column>
+              <ID>AGE</ID>
+              <Name>AGE</Name>
+              <SourceColumnID>AGE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ALCOHOL CONSUMING</ID>
+              <Name>ALCOHOL CONSUMING</Name>
+              <SourceColumnID>ALCOHOL CONSUMING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ALLERGY</ID>
+              <Name>ALLERGY</Name>
+              <SourceColumnID>ALLERGY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>ANXIETY</ID>
+              <Name>ANXIETY</Name>
+              <SourceColumnID>ANXIETY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CHEST PAIN</ID>
+              <Name>CHEST PAIN</Name>
+              <SourceColumnID>CHEST PAIN</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CHRONIC DISEASE</ID>
+              <Name>CHRONIC DISEASE</Name>
+              <SourceColumnID>CHRONIC DISEASE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>COUGHING</ID>
+              <Name>COUGHING</Name>
+              <SourceColumnID>COUGHING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>FATIGUE</ID>
+              <Name>FATIGUE</Name>
+              <SourceColumnID>FATIGUE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>GENDER</ID>
+              <Name>GENDER</Name>
+              <SourceColumnID>GENDER</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>Id</ID>
+              <Name>Id</Name>
+              <SourceColumnID>Id</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>LUNG CANCER</ID>
+              <Name>LUNG CANCER</Name>
+              <SourceColumnID>LUNG CANCER</SourceColumnID>
+              <Usage>PredictOnly</Usage>
+            </Column>
+            <Column>
+              <ID>PEER PRESSURE</ID>
+              <Name>PEER PRESSURE</Name>
+              <SourceColumnID>PEER PRESSURE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SHORTNESS OF BREATH</ID>
+              <Name>SHORTNESS OF BREATH</Name>
+              <SourceColumnID>SHORTNESS OF BREATH</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SMOKING</ID>
+              <Name>SMOKING</Name>
+              <SourceColumnID>SMOKING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SWALLOWING DIFFICULTY</ID>
+              <Name>SWALLOWING DIFFICULTY</Name>
+              <SourceColumnID>SWALLOWING DIFFICULTY</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>WHEEZING</ID>
+              <Name>WHEEZING</Name>
+              <SourceColumnID>WHEEZING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>YELLOW FINGERS</ID>
+              <Name>YELLOW FINGERS</Name>
+              <SourceColumnID>YELLOW FINGERS</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+      <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+      <ddl100_100:HoldoutMaxCases>1000</ddl100_100:HoldoutMaxCases>
+    </MiningStructure>
+  </MiningStructures>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>Survey Lung Cancer</ID>
+      <Name>Survey Lung Cancer</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-2C1S29E;Integrated Security=SSPI;Initial Catalog=survey_lung_cancer</ConnectionString>
+      <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>Survey Lung Cancer</ID>
+      <Name>Survey Lung Cancer</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout />
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>0</DiagramViewPortLeft>
+                <DiagramViewPortTop>0</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>Survey Lung Cancer</DataSourceID>
+      <Schema>
+        <xs:schema id="Survey_x0020_Lung_x0020_Cancer" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="Survey_x0020_Lung_x0020_Cancer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="5c7a654d-3527-44fe-93a5-3dc04970ce10">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_survey_lung_cancer" msprop:design-time-name="4c5d173f-5b56-40e0-800d-7ba5022bd0fd" msprop:FriendlyName="survey_lung_cancer" msprop:DbSchemaName="dbo" msprop:DbTableName="survey_lung_cancer" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="GENDER" msprop:design-time-name="5ca07903-e868-4a3e-aa1c-c793c8e68e1d" msprop:DbColumnName="GENDER" msprop:FriendlyName="GENDER">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="AGE" msprop:design-time-name="6fd77a8c-998d-437f-af8c-1bd353cde91b" msprop:DbColumnName="AGE" msprop:FriendlyName="AGE" type="xs:int" />
+                      <xs:element name="SMOKING" msprop:design-time-name="c693ea2d-2c84-4b15-8860-503694eb89fe" msprop:DbColumnName="SMOKING" msprop:FriendlyName="SMOKING" type="xs:int" />
+                      <xs:element name="YELLOW_FINGERS" msprop:design-time-name="2632bb89-b82b-42d5-afb2-d4f2b96b84a4" msprop:DbColumnName="YELLOW_FINGERS" msprop:FriendlyName="YELLOW_FINGERS" type="xs:int" />
+                      <xs:element name="ANXIETY" msprop:design-time-name="8fa793d1-abf6-4ef5-b087-1858a9d014e0" msprop:DbColumnName="ANXIETY" msprop:FriendlyName="ANXIETY" type="xs:int" />
+                      <xs:element name="PEER_PRESSURE" msprop:design-time-name="3aa1cbd9-6729-45dd-803d-3db1f13ff4bc" msprop:DbColumnName="PEER_PRESSURE" msprop:FriendlyName="PEER_PRESSURE" type="xs:int" />
+                      <xs:element name="CHRONIC_DISEASE" msprop:design-time-name="99b7b9a5-68ef-4e89-8d92-a66ecc05dcc8" msprop:DbColumnName="CHRONIC_DISEASE" msprop:FriendlyName="CHRONIC_DISEASE" type="xs:int" />
+                      <xs:element name="FATIGUE" msprop:design-time-name="b4ef40eb-7dda-4231-862a-d147355c07ec" msprop:DbColumnName="FATIGUE" msprop:FriendlyName="FATIGUE" type="xs:int" />
+                      <xs:element name="ALLERGY" msprop:design-time-name="57f24ab9-5e83-457f-b099-55cab76230b8" msprop:DbColumnName="ALLERGY" msprop:FriendlyName="ALLERGY" type="xs:int" />
+                      <xs:element name="WHEEZING" msprop:design-time-name="7c1dcbfe-99d3-42bf-8de8-dff0a9466323" msprop:DbColumnName="WHEEZING" msprop:FriendlyName="WHEEZING" type="xs:int" />
+                      <xs:element name="ALCOHOL_CONSUMING" msprop:design-time-name="fd269393-a7df-45d0-9cee-854505051211" msprop:DbColumnName="ALCOHOL_CONSUMING" msprop:FriendlyName="ALCOHOL_CONSUMING" type="xs:int" />
+                      <xs:element name="COUGHING" msprop:design-time-name="389cf2da-7189-4c81-8a52-4b114a418227" msprop:DbColumnName="COUGHING" msprop:FriendlyName="COUGHING" type="xs:int" />
+                      <xs:element name="SHORTNESS_OF_BREATH" msprop:design-time-name="22a4a952-627c-4704-86eb-40d0fa80b5e4" msprop:DbColumnName="SHORTNESS_OF_BREATH" msprop:FriendlyName="SHORTNESS_OF_BREATH" type="xs:int" />
+                      <xs:element name="SWALLOWING_DIFFICULTY" msprop:design-time-name="6ff6b691-8659-47fb-b306-cc4b4f6cd670" msprop:DbColumnName="SWALLOWING_DIFFICULTY" msprop:FriendlyName="SWALLOWING_DIFFICULTY" type="xs:int" />
+                      <xs:element name="CHEST_PAIN" msprop:design-time-name="fa691ff6-b70a-46c5-bc87-4c5b14abf0c4" msprop:DbColumnName="CHEST_PAIN" msprop:FriendlyName="CHEST_PAIN" type="xs:int" />
+                      <xs:element name="LUNG_CANCER" msprop:design-time-name="81be44bb-af9e-4d0d-9e7e-2d39debad054" msprop:DbColumnName="LUNG_CANCER" msprop:FriendlyName="LUNG_CANCER">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8c45b2a7-e008-49b9-a1f1-54e32e815256" msprop:DbColumnName="id" msprop:FriendlyName="id" type="xs:int" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+            <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+              <xs:selector xpath=".//dbo_survey_lung_cancer" />
+              <xs:field xpath="id" />
+            </xs:unique>
+          </xs:element>
+        </xs:schema>
+        <Survey_x0020_Lung_x0020_Cancer xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>
